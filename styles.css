@@ -1,0 +1,113 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: rgba(213, 238, 238, 0.499);
+}
+
+.container {
+  box-shadow: 10px 20px 30px rgba(173, 216, 230, 0.5);
+  width: 80%;
+  height: 90%;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+aside {
+  background-image: url(assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 27%;
+}
+
+form {
+  width: 70% !important;
+}
+
+aside ol {
+  list-style: none;
+}
+
+.step::before {
+  content: attr(step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: none;
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 0.7rem;
+}
+
+.active-step::before {
+  background-color: rgb(196, 219, 238);
+  color: black;
+}
+
+.price {
+  font-size: 0.7rem;
+}
+
+#plans-options label {
+  width: 30% !important;
+}
+
+input:checked + .plan-label,
+input:focus {
+  background-color: rgba(213, 238, 238, 0.499);
+  border: 1px solid slateblue !important;
+}
+
+input + .plan-label:hover {
+  border: 1px solid slateblue !important;
+}
+
+.form-check {
+  background-color: rgba(213, 238, 238, 0.499);
+}
+
+/* Page 3 */
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  accent-color: #483eff;
+}
+
+.add-ons-label {
+  width: 90%;
+}
+
+.add-ons-price {
+  color: slateblue;
+}
+
+.add-on:has(> input[type="checkbox"]:checked) {
+  background-color: rgba(213, 238, 238, 0.499);
+  border: 1px solid slateblue !important;
+}
+
+.add-on:hover {
+  border: 1px solid slateblue !important;
+}
+
+/* Summary */
+
+#summary {
+  background-color: rgba(213, 238, 238, 0.499);
+}
+
+
