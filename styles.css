@@ -31,6 +31,7 @@ aside {
 
 form {
   width: 70% !important;
+  position: relative;
 }
 
 aside ol {
@@ -51,6 +52,7 @@ aside ol {
   border-radius: 50%;
   margin-right: 15px;
   font-size: 0.7rem;
+  align-self: center;
 }
 
 .active-step::before {
@@ -84,7 +86,7 @@ input + .plan-label:hover {
 
 input[type="checkbox"] {
   width: 1.5rem;
-  accent-color: #483eff;
+  accent-color: #0d0b35;
 }
 
 .add-ons-label {
@@ -110,4 +112,30 @@ input[type="checkbox"] {
   background-color: rgba(213, 238, 238, 0.499);
 }
 
+@media screen and (max-width: 991px) {
+  aside {
+    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    width: 100%;
+    height: 50%;
+  }
 
+  .container{
+    height: 100vh !important;
+  }
+
+  .step::before {
+    margin-right: 0px;
+    align-self: flex-start;
+  }
+
+  .container{
+  background: rgba(213, 238, 238, 0.499) !important;
+    
+  }
+
+  form{
+    width: 90%;
+    top: -15%;
+  }
+
+}

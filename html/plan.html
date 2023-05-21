@@ -13,53 +13,52 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="vw-100 vh-100 d-flex justify-content-center align-items-center">
-    
     <div
-      class="container d-flex flex-row justify-content-space-around bg-light border border-light rounded-3 h-75 p-3"
+      class="container d-flex flex-column flex-lg-row bg-light border border-light rounded-3 h-75 p-lg-3"
     >
-      <aside class="d-flex flex-column rounded-3 m-3 pt-5 px-5">
-        <ol class="d-flex flex-column">
+      <aside class="d-flex rounded-lg-3 m-lg-3 pt-lg-5 px-lg-5 h-lg-100">
+        <ol class="d-flex flex-row flex-lg-column mx-auto mx-lg-0">
           <li
-            class="step d-flex flex-row w-100 justify-content-start align-items-center m-3"
+            class="step d-flex flex-row w-100 justify-content-space-around pt-3 m-3"
             step="1"
           >
-            <span class="d-inline">
-              <p class="text-light text-fluid text-opacity-75">Step 1</p>
+            <a class="d-none d-lg-inline">
+              <p class="text-light text-opacity-75">Step 1</p>
               <p class="text-light fw-bold">YOUR INFO</p>
-            </span>
+            </a>
           </li>
           <li
-            class="step active-step d-flex flex-row w-100 justify-content-start align-items-center m-3"
+            class="step active-step d-flex flex-row w-100 justify-content-space-around pt-3 m-3"
             step="2"
           >
-            <span class="d-inline">
+            <a class="d-none d-lg-inline">
               <p class="text-light text-opacity-75">Step 2</p>
               <p class="text-light fw-bold">SELECT PLAN</p>
-            </span>
+            </a>
           </li>
           <li
-            class="step d-flex flex-row w-100 justify-content-start align-items-center m-3"
+            class="step d-flex flex-row w-100 justify-content-space-around pt-3 m-3"
             step="3"
           >
-            <span class="d-inline">
+            <a class="d-none d-lg-inline">
               <p class="text-light text-opacity-75">Step 3</p>
               <p class="text-light fw-bold">ADD-ONS</p>
-            </span>
+            </a>
           </li>
           <li
-            class="step d-flex flex-row w-100 justify-content-start align-items-center m-3"
+            class="step d-flex flex-row w-100 justify-content-space-around pt-3 m-3"
             step="4"
           >
-            <span class="d-inline">
+            <a class="d-none d-lg-inline">
               <p class="text-light text-opacity-75">Step 4</p>
               <p class="text-light fw-bold">SUMMARY</p>
-            </span>
+            </a>
           </li>
         </ol>
       </aside>
 
       <form
-        class="px-5 mx-2 d-flex flex-column justify-content-space-around my-5 position-relative"
+        class="p-5 mx-auto my-5 d-flex flex-column bg-light rounded-4"
         action=""
       >
         <h1 class="fs-1 my-2 text-dark fw-bolder">Select Your Plan</h1>
@@ -136,21 +135,28 @@
           </label>
         </div>
 
-        <div class="form-check form-switch d-flex flex-row justify-content-center align-items-center my-5 py-3">
-            <span class="form-check-label fw-bold mx-5" >Monthly</span>
-            <input class="form-check-input mx-5" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <span class="form-check-label mx-5" > Yearly</span>
+        <div
+          class="form-check form-switch d-flex flex-row justify-content-center align-items-center my-5 py-3"
+        >
+          <span class="form-check-label fw-bold mx-5">Monthly</span>
+          <input
+            class="form-check-input mx-5"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <span class="form-check-label mx-5"> Yearly</span>
         </div>
 
         <a
           type="button"
           href="add-ons.html"
-          class="btn btn-rounded btn-dark p-2 px-4 position-absolute bottom-0 align-self-end"
+          class="btn btn-rounded btn-dark next-btn p-2 px-4 position-absolute bottom-0 align-self-end"
           >Next Step</a
         >
         <a
           href="index.html"
-          class="btn btn-rounded btn-outline-dark p-2 px-4 position-absolute bottom-0"
+          class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4 position-absolute bottom-0"
           >Go Back</a
         >
       </form>
