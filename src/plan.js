@@ -14,7 +14,6 @@ let yearVsMonth = (event)=>{
         triggerMonthly(event.target);
     }
     monthly = !monthly;
-    console.log(monthly);
 }
 
 let triggerMonthly = (toggler)=>{
@@ -47,9 +46,9 @@ let handleNextBtnClick = ()=>{
     location.assign("add-ons.html");
 }
 
-let handlePrevBtnClick = ()=>[
+let handlePrevBtnClick = ()=>{
     location.assign("index.html")
-]
+}
 
 year_month_toggler.addEventListener('click', yearVsMonth);
 
