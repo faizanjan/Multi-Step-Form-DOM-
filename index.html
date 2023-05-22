@@ -57,13 +57,25 @@
         </ol>
       </aside>
 
-      <form class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4" action="">
+      <form
+        class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4"
+        action=""
+      >
         <h1 class="fs-1 my-2 text-dark fw-bolder">Personal Info</h1>
         <p class="text-muted my-2 mb-5">
           Please provide your name, email address, and phone number
         </p>
 
-        <label class="text-dark mt-3 mb-1" for="name">Name</label>
+        <label
+          id="label-for-name"
+          class="text-dark mt-3 mb-1 d-flex flex-row justify-content-between"
+          for="name"
+        >
+          <span>Name</span>
+          <span class="field-required text-danger">
+            This field is required
+          </span>
+        </label>
         <input
           class="p-2 w-75 border rounded-2"
           type="text"
@@ -72,7 +84,14 @@
           required
         />
 
-        <label class="text-dark mt-3 mb-1" for="email">Email Address</label>
+        <label id="label-for-email" 
+        class="text-dark mt-3 mb-1 d-flex flex-row justify-content-between"
+        for="email">
+          <span>Email Address</span>
+          <span class="field-required text-danger">
+            This field is required
+          </span>
+        </label>
         <input
           class="p-2 w-75 border rounded-2"
           type="email"
@@ -81,9 +100,16 @@
           required
         />
 
-        <label class="text-dark mt-3 mb-1" for="phone-number"
-          >Phone Number</label
+        <label
+          id="label-for-number"
+          class="text-dark mt-3 mb-1 d-flex flex-row justify-content-between"
+          for="phone-number"
         >
+          <span>Phone Number</span>
+          <span class="field-required text-danger">
+            This field is required
+          </span>
+        </label>
         <input
           class="p-2 w-75 border rounded-2"
           type="number"
@@ -91,12 +117,14 @@
           placeholder="e.g. +1 234 567 890"
           required
         />
-
       </form>
 
-        <a href="plan.html" class="btn btn-rounded btn-dark next-btn p-2 px-4"
-          >Next Step</a
-        >
+      <button
+        href="plan.html"
+        class="btn btn-rounded btn-dark next-btn p-2 px-4"
+      >
+        Next Step
+      </button>
     </div>
 
     <script
@@ -104,5 +132,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script src="src/index.js"></script>
   </body>
 </html>

@@ -204,3 +204,9 @@ input[type="checkbox"] {
     left: 1rem;
   }
 }
+
+/* For DOM manipulation */
+
+.text-danger{
+  display: none;
+}
