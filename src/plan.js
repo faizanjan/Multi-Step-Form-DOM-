@@ -17,7 +17,7 @@ let yearVsMonth = (event)=>{
 }
 
 let triggerMonthly = (toggler)=>{
-    let rates = ['$9/mo', '$12/mo', '15/mo']
+    let rates = ['$9/mo', '$12/mo', '$15/mo']
     prices.forEach((element, index) => {
         element.innerText= rates[index];
     });
@@ -29,7 +29,7 @@ let triggerMonthly = (toggler)=>{
 }
 
 let triggerYearly = (toggler)=>{
-    let rates = ['$90/yr', '$120/yr', '150/yr']
+    let rates = ['$90/yr', '$120/yr', '$150/yr']
     prices.forEach((element, index) => {
         element.innerText= rates[index];
     });
