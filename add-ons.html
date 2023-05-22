@@ -57,20 +57,28 @@
         </ol>
       </aside>
 
-      <form class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4" action="">
+      <form
+        class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4"
+        action=""
+      >
         <h1 class="fs-1 my-2 text-dark fw-bolder">Pick add-ons</h1>
         <p class="text-muted my-2 mb-3">
           Add-ons help enhance your gaming experience
         </p>
 
         <div class="add-on d-flex flex-row border rounded-2 p-3 my-2">
-          <input class="mx-auto mx-sm-3" type="checkbox" id="online-service" checked />
+          <input
+            class="mx-auto mx-sm-3"
+            type="checkbox"
+            id="online-service"
+            checked
+          />
           <label
             class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-3 lg-3 mx-sm-5"
             for="online-service"
           >
             <div class="add-ons-details">
-              <p class="my-1 fs-5">Online service</p>
+              <p class="add-ons-name my-1 fs-5">Online service</p>
               <p class="text-muted">Access to multiplayer games</p>
             </div>
             <span class="add-ons-price">+$1/mo</span>
@@ -78,13 +86,18 @@
         </div>
 
         <div class="add-on d-flex flex-row border rounded-2 p-3 my-2">
-          <input class="mx-auto mx-sm-3" type="checkbox" id="larger-storage" checked />
+          <input
+            class="mx-auto mx-sm-3"
+            type="checkbox"
+            id="larger-storage"
+            checked
+          />
           <label
             class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-3 lg-3 mx-sm-5"
             for="larger-storage"
           >
             <div class="add-ons-details">
-              <p class="my-1 fs-5">Larger storage</p>
+              <p class="add-ons-name my-1 fs-5">Larger storage</p>
               <p class="text-muted">Extra 1TB of cloud save</p>
             </div>
             <span class="add-ons-price">+$2/mo</span>
@@ -98,26 +111,20 @@
             for="custom-profile"
           >
             <div class="add-ons-details">
-              <p class="my-1 fs-5">Customizable profile</p>
+              <p class="add-ons-name my-1 fs-5">Customizable profile</p>
               <p class="text-muted">Custom theme on your profile</p>
             </div>
             <span class="add-ons-price">+$2/mo</span>
           </label>
         </div>
-
       </form>
 
-      <a
-            href="plan.html"
-            class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4"
-            >Go Back</a
-          >
-          <a
-            href="summary.html"
-            class="btn btn-rounded btn-dark next-btn p-2 px-4"
-            >Next Step</a
-          >
-
+      <button class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4">
+        Go Back
+      </button>
+      <button class="btn btn-rounded btn-dark next-btn p-2 px-4">
+        Next Step
+      </button>
     </div>
 
     <script
@@ -125,5 +132,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/add-ons.js"></script>
   </body>
 </html>
