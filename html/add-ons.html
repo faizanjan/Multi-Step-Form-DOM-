@@ -12,11 +12,11 @@
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+  <body class="d-flex justify-content-center align-items-center">
     <div
-      class="container d-flex flex-column flex-lg-row bg-light border border-light rounded-3 h-75 p-lg-3"
+      class="my-container d-flex flex-column flex-lg-row bg-light border border-light rounded-3 h-75 p-lg-3"
     >
-      <aside class="d-flex rounded-lg-3 m-lg-3 pt-lg-5 px-lg-5 h-lg-100">
+      <aside class="d-flex rounded-lg-3 m-lg-3 pt-lg-5 px-lg-4 h-lg-100">
         <ol class="d-flex flex-row flex-lg-column mx-auto mx-lg-0">
           <li
             class="step d-flex flex-row w-100 justify-content-space-around pt-3 m-3"
@@ -57,23 +57,20 @@
         </ol>
       </aside>
 
-      <form
-        class="p-5 mx-auto my-5 d-flex flex-column bg-light rounded-4"
-        action=""
-      >
+      <form class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4" action="">
         <h1 class="fs-1 my-2 text-dark fw-bolder">Pick add-ons</h1>
         <p class="text-muted my-2 mb-3">
           Add-ons help enhance your gaming experience
         </p>
 
         <div class="add-on d-flex flex-row border rounded-2 p-3 my-2">
-          <input class="mx-3" type="checkbox" id="online-service" checked />
+          <input class="mx-auto mx-sm-3" type="checkbox" id="online-service" checked />
           <label
-            class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-5"
+            class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-3 lg-3 mx-sm-5"
             for="online-service"
           >
             <div class="add-ons-details">
-              <h3 class="my-1 fs-5">Online service</h3>
+              <p class="my-1 fs-5">Online service</p>
               <p class="text-muted">Access to multiplayer games</p>
             </div>
             <span class="add-ons-price">+$1/mo</span>
@@ -81,13 +78,13 @@
         </div>
 
         <div class="add-on d-flex flex-row border rounded-2 p-3 my-2">
-          <input class="mx-3" type="checkbox" id="larger-storage" checked />
+          <input class="mx-auto mx-sm-3" type="checkbox" id="larger-storage" checked />
           <label
-            class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-5"
+            class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-3 lg-3 mx-sm-5"
             for="larger-storage"
           >
             <div class="add-ons-details">
-              <h3 class="my-1 fs-5">Larger strorage</h3>
+              <p class="my-1 fs-5">Larger storage</p>
               <p class="text-muted">Extra 1TB of cloud save</p>
             </div>
             <span class="add-ons-price">+$2/mo</span>
@@ -95,33 +92,32 @@
         </div>
 
         <div class="add-on d-flex flex-row border rounded-2 p-3 my-2">
-          <input class="mx-3" type="checkbox" id="custom-profile" />
+          <input class="mx-auto mx-sm-3" type="checkbox" id="custom-profile" />
           <label
-            class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-5"
+            class="add-ons-label d-flex align-items-center flex-row justify-content-between mx-3 lg-3 mx-sm-5"
             for="custom-profile"
           >
             <div class="add-ons-details">
-              <h3 class="my-1 fs-5">Customizable profile</h3>
+              <p class="my-1 fs-5">Customizable profile</p>
               <p class="text-muted">Custom theme on your profile</p>
             </div>
             <span class="add-ons-price">+$2/mo</span>
           </label>
         </div>
 
-        <a
-          type="button"
-          href="summary.html"
-          class="btn btn-rounded btn-dark next-btn p-2 px-4 position-absolute bottom-0 align-self-end"
-        >
-          Next Step
-        </a>
-        <a
-          href="plan.html"
-          class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4 position-absolute bottom-0"
-        >
-          Go Back
-        </a>
       </form>
+
+      <a
+            href="plan.html"
+            class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4"
+            >Go Back</a
+          >
+          <a
+            href="summary.html"
+            class="btn btn-rounded btn-dark next-btn p-2 px-4"
+            >Next Step</a
+          >
+
     </div>
 
     <script

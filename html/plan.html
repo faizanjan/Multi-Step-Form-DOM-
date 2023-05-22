@@ -12,11 +12,11 @@
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+  <body class="d-flex justify-content-center align-items-center">
     <div
-      class="container d-flex flex-column flex-lg-row bg-light border border-light rounded-3 h-75 p-lg-3"
+      class="my-container d-flex flex-column flex-lg-row bg-light border border-light rounded-3 h-75 p-lg-3"
     >
-      <aside class="d-flex rounded-lg-3 m-lg-3 pt-lg-5 px-lg-5 h-lg-100">
+      <aside class="d-flex rounded-lg-3 m-lg-3 pt-lg-5 px-lg-4 h-lg-100">
         <ol class="d-flex flex-row flex-lg-column mx-auto mx-lg-0">
           <li
             class="step d-flex flex-row w-100 justify-content-space-around pt-3 m-3"
@@ -57,16 +57,13 @@
         </ol>
       </aside>
 
-      <form
-        class="p-5 mx-auto my-5 d-flex flex-column bg-light rounded-4"
-        action=""
-      >
+      <form class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4" action="">
         <h1 class="fs-1 my-2 text-dark fw-bolder">Select Your Plan</h1>
         <p class="text-muted my-2 mb-5">
           You have the option of monthly or yearly billing
         </p>
 
-        <div id="plans-options" class="d-flex justify-content-between">
+        <div id="plans-options" class="d-flex flex-column flex-lg-row justify-content-between">
           <input
             type="radio"
             id="arcade"
@@ -76,11 +73,11 @@
             checked
           />
           <label
-            class="plan-label d-flex flex-column justify-content-between border rounded-2 p-3"
+            class="plan-label d-flex flex-lg-column justify-content-between border rounded-2 p-3"
             for="arcade"
           >
             <img
-              class="w-25 mb-5"
+              class="mb-lg-5"
               src="../assets/images/icon-arcade.svg"
               alt="arcade"
             />
@@ -98,11 +95,11 @@
             class="invisible"
           />
           <label
-            class="plan-label d-flex flex-column justify-content-between border rounded-2 p-3"
+            class="plan-label d-flex flex-lg-column justify-content-between border rounded-2 p-3"
             for="advanced"
           >
             <img
-              class="w-25 mb-5"
+              class="mb-lg-5"
               src="../assets/images/icon-advanced.svg"
               alt="arcade"
             />
@@ -120,11 +117,11 @@
             class="invisible"
           />
           <label
-            class="plan-label d-flex flex-column justify-content-between border rounded-2 p-3"
+            class="plan-label d-flex flex-lg-column justify-content-between border rounded-2 p-3"
             for="pro"
           >
             <img
-              class="w-25 mb-5"
+              class="mb-lg-5"
               src="../assets/images/icon-pro.svg"
               alt="arcade"
             />
@@ -136,30 +133,29 @@
         </div>
 
         <div
-          class="form-check form-switch d-flex flex-row justify-content-center align-items-center my-5 py-3"
+          class="form-check form-switch d-flex flex-row justify-content-center align-items-center my-5 py-4"
         >
-          <span class="form-check-label fw-bold mx-5">Monthly</span>
+          <span class="form-check-label fw-bold mx-2 mx-sm-3 mx-lg-5">Monthly</span>
           <input
-            class="form-check-input mx-5"
+            class="form-check-input mx-2 mx-sm-3 mx-lg-5"
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault"
           />
-          <span class="form-check-label mx-5"> Yearly</span>
+          <span class="form-check-label mx-2 mx-sm-3 mx-lg-5"> Yearly</span>
         </div>
 
-        <a
-          type="button"
-          href="add-ons.html"
-          class="btn btn-rounded btn-dark next-btn p-2 px-4 position-absolute bottom-0 align-self-end"
-          >Next Step</a
-        >
-        <a
-          href="index.html"
-          class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4 position-absolute bottom-0"
-          >Go Back</a
-        >
+
       </form>
+
+      <a
+        href="index.html"
+        class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4"
+        >Go Back</a
+      >
+      <a href="add-ons.html" class="btn btn-rounded btn-dark next-btn p-2 px-4"
+        >Next Step</a
+      >
     </div>
 
     <script
