@@ -38,4 +38,11 @@ totalPrice.classList.add('text-primary', 'fs-4')
 let handlePrevBtnClick = ()=>{
     location.assign("add-ons.html")
 }
+
+let handleNextBtnClick = ()=>{
+    // Deal with the data however you want
+    location.assign("thankyou.html");
+}
+
+nextBtn.addEventListener('click', handleNextBtnClick);
 prevBtn.addEventListener('click', handlePrevBtnClick);
