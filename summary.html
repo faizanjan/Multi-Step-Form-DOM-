@@ -69,47 +69,34 @@
             class="d-flex flex-row justify-content-between align-items-center pe-3 mt-2 mb-3"
           >
             <div id="plan-details">
-              <h5 id="plan-name" class="fw-bold mb-2">Arcade (Monthly)</h5>
+              <h5 id="plan-name" class="fw-bold mb-2"></h5>
               <a href="plan.html" class="text-muted">Change</a>
             </div>
-            <span id="plan-price" class="fw-bold"> $9/mo</span>
+            <span id="plan-price" class="fw-bold"></span>
           </div>
           <hr />
           <div id="add-ons-summary" class="mt-3">
-            <div
-              class="add-on-sum d-flex flex-row justify-content-between align-items-center pe-3 mt-2 mb-3"
-            >
-              <p class="add-on-name text-muted">Online service</p>
-              <p class="add-on-price">+$1/mo</p>
-            </div>
-            <div
-              class="add-on-sum d-flex flex-row justify-content-between align-items-center pe-3 mt-2 mb-3"
-            >
-              <p class="add-on-name text-muted">Online service</p>
-              <p class="add-on-price">+$1/mo</p>
-            </div>
+          
           </div>
         </div>
 
         <div
-          id="total"
+          id="total-container"
           class="my-4 w-100 m-auto d-flex flex-row justify-content-between px-3"
         >
-          <p id="total" class="text-muted">Total (per month)</p>
-          <h4 id="total-summary-price">$12/mo</h4>
+          <p id="total"></p>
+          <h4 id="total-summary-price"></h4>
         </div>
 
       </form>
 
-        <a
-          href="add-ons.html"
+        <button
           class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4"
-          >Go Back</a
+          >Go Back</button
         >
-        <a
-          href="thankyou.html"
+        <button
           class="btn btn-rounded btn-dark next-btn p-2 px-4"
-          >Confirm</a
+          >Confirm</button
         >
 
     </div>
@@ -119,5 +106,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="src/summary.js"></script>
   </body>
 </html>
