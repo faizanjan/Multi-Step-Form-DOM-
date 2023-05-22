@@ -5,21 +5,22 @@ let nextBtn = document.querySelector(".next-btn");
 let fields = document.querySelectorAll("input");
 
 let handleNextBtnClick = () => {
+  let allFieldsEntered = true;
   fields.forEach((field) => {
     if (field.value === "") {
         field.classList.add("border-danger");
         let thisLabel = field.previousElementSibling;
         let prompt = thisLabel.lastElementChild;
         prompt.style.display = "inline";
+        allFieldsEntered=false;
     }
-
-    else{
+  });
+  if(allFieldsEntered){
         sessionStorage.setItem("userName", nameField.value)
         sessionStorage.setItem("userEmail", emailField.value)
         sessionStorage.setItem("userNumber", phoneNumberField.value)
         location.assign("./plan.html")
     }
-  });
 };
 
 fields.forEach(field=>{
