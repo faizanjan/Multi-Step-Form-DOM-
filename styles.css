@@ -90,6 +90,11 @@ input + .plan-label:hover {
   background-color: rgba(213, 238, 238, 0.499);
 }
 
+.two-months-free{
+  font-size: 0.8rem;
+  display: none;
+}
+
 /* Page 3 */
 
 input[type="checkbox"] {

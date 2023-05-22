@@ -57,13 +57,19 @@
         </ol>
       </aside>
 
-      <form class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4" action="">
+      <form
+        class="px-3 py-4 p-sm-5 mx-auto d-flex flex-column bg-light rounded-4"
+        action=""
+      >
         <h1 class="fs-1 my-2 text-dark fw-bolder">Select Your Plan</h1>
         <p class="text-muted my-2 mb-5">
           You have the option of monthly or yearly billing
         </p>
 
-        <div id="plans-options" class="d-flex flex-column flex-lg-row justify-content-between">
+        <div
+          id="plans-options"
+          class="d-flex flex-column flex-lg-row justify-content-between"
+        >
           <input
             type="radio"
             id="arcade"
@@ -84,6 +90,9 @@
             <span class="plan-details">
               <p class="plan text-dark fw-bold">Arcade</p>
               <p class="price text-muted">$9/mo</p>
+              <p class="two-months-free">
+                2 months free
+              </p>
             </span>
           </label>
 
@@ -106,6 +115,9 @@
             <span class="plan-details">
               <p class="plan text-dark fw-bold">Advanced</p>
               <p class="price text-muted">$12/mo</p>
+              <p class="two-months-free">
+                2 months free
+              </p>
             </span>
           </label>
 
@@ -128,6 +140,9 @@
             <span class="plan-details">
               <p class="plan text-dark fw-bold">Pro</p>
               <p class="price text-muted">$15/mo</p>
+              <p class="two-months-free">
+                2 months free
+              </p>
             </span>
           </label>
         </div>
@@ -135,27 +150,24 @@
         <div
           class="form-check form-switch d-flex flex-row justify-content-center align-items-center my-5 py-4"
         >
-          <span class="form-check-label fw-bold mx-2 mx-sm-3 mx-lg-5">Monthly</span>
+          <span class="form-check-label fw-bold mx-2 mx-sm-3 mx-lg-5"
+            >Monthly</span
+          >
           <input
             class="form-check-input mx-2 mx-sm-3 mx-lg-5"
             type="checkbox"
-            role="switch"
             id="flexSwitchCheckDefault"
           />
           <span class="form-check-label mx-2 mx-sm-3 mx-lg-5"> Yearly</span>
         </div>
-
-
       </form>
 
-      <a
-        href="index.html"
-        class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4"
-        >Go Back</a
-      >
-      <a href="add-ons.html" class="btn btn-rounded btn-dark next-btn p-2 px-4"
-        >Next Step</a
-      >
+      <button class="btn btn-rounded btn-outline-dark prev-btn p-2 px-4">
+        Go Back
+      </button>
+      <button class="btn btn-rounded btn-dark next-btn p-2 px-4">
+        Next Step
+      </button>
     </div>
 
     <script
@@ -163,5 +175,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="src/plan.js"></script>
   </body>
 </html>
